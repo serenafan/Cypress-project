@@ -1,0 +1,29 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest":"npm run test -- --headed",
+    "chromeTest":"npm run test -- --browser chrome",
+    "open":"node_modules\\.bin\\cypress open",
+    "recordDashboardTest":"npm run test -- --record --key c3ac4c8f-34e1-4931-9a7b-92a3f0336fb0",
+    "mochaReport":"npm run test-- --reporter mochawesome",
+    "regression":"npm run test -- --spec \"cypress/integration/Regression/*\""
+
+
+
+   },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.11.0",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^6.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}
